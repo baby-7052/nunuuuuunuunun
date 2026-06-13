@@ -1,0 +1,606 @@
+{% include 'header.twig' %}
+<div class="wrapper-content">
+<div class="wrapper-content__header"></div>
+<div class="wrapper-content__body">
+<style>
+ @media only screen and (max-width: 768px) {
+        .tab {
+            display: none;
+        }
+    }
+.select2-container .select2-selection__icon img {
+    max-width: calc(1em + 1px);
+    max-height: calc(1em + 1px);
+}
+				#service_description,
+				#service_avg_time {
+background-color: #e6f4f2;
+    border-color: #000000;
+    color: #334e6e;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-style: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-shadow: none;
+    outline: none;
+				}
+
+    .each-note {
+        border: 1px dashed  rgb(245, 234, 234);
+        margin: 2px;
+        border-radius: 5px;
+        padding: 10px 5px;
+    }
+
+    .each-note .title {
+        display: inline-block;
+    }
+    .each-note .badge {
+        float: right
+    }
+    .each-note .news-type-list-item {
+        padding: 10px 0px;
+    }
+    .aside {
+        flex: 1 1 25%;
+    }
+    .each-note i{
+        margin-right: 5px;
+    }
+    .each-note a{
+        font-size: large
+    }
+    .each-note  img {
+        max-width: 100%
+    }
+    div#contact .social-links>a {
+        font-size: 24px;
+        margin: 5px;
+    }    
+    .ordersel .dropdown-menu {
+        max-height: 400px;
+    }
+
+    #order-form {
+        max-width: 80vw;
+        margin: auto;
+    }
+    .bootstrap-select .filter-option {
+        white-space: normal;
+    }
+</style>
+<div id="block_19">
+<div class="ticket-form">
+<div class="bg"></div>
+<div class="divider-top"></div>
+<div class="divider-bottom"></div>
+<div class="container-fluid">
+<div class="row px-lg-4 ticket-dialog__alignment">
+<div class="col-lg-12">
+<div class="component_content_card component_content_button component_content_headers">
+<div class="card">
+<div class="new-order__content-text">
+<div class="new-order__content-text"><center><center>
+<h5><strong><span style="color: #000000;">We Have Enable <span style="color: #2dc26b;">2% Bonus</span> On <span style="color: #e03e2d;">Payments</span></span></strong></h5>
+<center><strong><a href="/addfunds"><button class="button-33" role="button"><span style="color: #000000;"><span style="color: #ecf0f1;">Add Balance</span></span></button></a></strong>  <a href="https://chat.whatsapp.com/GAJIgMudU1D6tDBqg8br6z"><button class="button-33" role="button"><strong><span style="color: #000000;"><span style="color: #ecf0f1;">Join Group</span></span></strong></button></a></center></center></center></div>
+<style>
+/* CSS */
+.button-32 {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 20%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}</style>
+<style>
+/* CSS */
+.button-33 {
+  background-color: #56adea7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}<style></style>
+<style>
+/* CSS */
+.button-32 {
+  background-color: #56adea7;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 20%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+span.badge.service_id_badge.bg-primary {
+    color: #4fb4f2;
+    color: white;
+}
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #56adea;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}</style>
+<style>
+/* CSS */
+.button-33 {
+  background-color: #56adea;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}<style></style>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>.totals-block__card {display: flex;}.totals-block__card-left { width: 152px;flex-basis: 152px;padding-right: 12px;}.totals-block__card-right {width: 100%; }.totals-block__icon-preview {display: flex;justify-content: center;align-items: center;height: 100%;border-radius: 5px !important; font-family: "Merriweather Sans", sans-serif; font-size: ; font-style: normal; font-weight: 400; }.card {margin-bottom:0;}</style>
+
+
+<div class="trps" style="padding: 14px;">
+    <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-2 mt-2">
+            <div class="card h-100">
+                <div class="totals-block__card-content" style="display: flex; align-items: center;">
+                    <div class="totals-block__icon-preview" style="font-size: 33px;">
+                        <span class="totals-block__icon fas fa-balance-scale" style="color: #052a36;"></span>
+                    </div>
+                    <div class="totals-block__info" style="margin-left: 15px;">
+                        <h3 class="totals-block__count-value" style="color: #052a36; font-size: 24px;">{{ user["spent"]}}</h3>
+                        <p class="totals-block__description" style="font-size: 16px; margin: 0;">Total Spent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-2 mt-2">
+            <div class="card h-100">
+                <div class="totals-block__card-content" style="display: flex; align-items: center;">
+                    <div class="totals-block__icon-preview" style="font-size: 33px;">
+<span class="totals-block__icon fas fa-shopping-cart" style="color: #4D596A;"></span>                    </div>
+                    <div class="totals-block__info" style="margin-left: 15px;">
+                        <h3 class="totals-block__count-value" style="font-size: 24px;"> {{ site_order }} </h3>
+                        <p class="totals-block__description" style="font-size: 16px; margin: 0;">Panel Orders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-2 mt-2">
+            <div class="card h-100">
+                <div class="totals-block__card-content" style="display: flex; align-items: center;">
+                    <div class="totals-block__icon-preview" style="font-size: 33px;">
+                        <span class="totals-block__icon fas fa-rupee-sign" style="color: #4D596A;"></span>
+                    </div>
+                    <div class="totals-block__info" style="margin-left: 15px;">
+                        <h3 class="totals-block__count-value" style="font-size: 24px;">{{ user["balance"]}}
+                        
+                        
+            </h3>
+                       <p><span style="font-size: 16px"> Total Balance</span><span style="font-size: 13px"></span><a target="_self" href="/addfunds"><span style="font-size: 12px"><strong style="font-weight: bold; color: rgba(229, 14, 21, 0.83); border-bottom: none;"></strong></span></a></p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% if contentText %}
+
+<div id="block_124"><div class="block-bg"></div><div class="container"><div class="faq "><div class="row justify-content-center"><div class="col-lg-8"><div class="row"><div class="col-lg-12"><div class="faq-block__card"><div class="card" style="margin-top: 15px;"><div class="faq-block__header collapsed" data-toggle="collapse" data-target="#faq-block-124-1" aria-expanded="false" aria-controls="#faq-block-124-1"><div class="faq-block__header-title"><p class="text-center"><span style="color: rgba(229, 14, 21, 0.83);"><span style="text-align: CENTER"><strong style="font-weight: bold;">THINGS TO BE KNOWN BEFORE PLACING THE ORDER </strong></span></span></p></div><div class="faq-block__header-icon"><div class="style-text-dark faq-block__icon" style=""></div></div></div><div class="faq-block__body collapse" id="faq-block-124-1"><div class="faq-block__body-description" style="padding-top: 8px">
+    
+  {{ contentText }}
+  
+  
+  </div></div></div></div></div></div></div></div></div></div></div>
+
+
+{% endif %}
+
+
+
+
+<div id="block_16">
+<div class="new_order-block">
+<div class="bg"></div>
+<div class="divider-top"></div>
+<div class="divider-bottom"></div>
+<div class="container-fluid">
+<div class="row mt-3">
+<div class="col-lg-7 mb-3 mb-lg-0">
+<div class="component_form_group component_card component_radio_button">
+<div class="component_status_tabs mb-3">
+<div class="">
+<ul class="nav nav-pills tab">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#new-order" onclick="toggleTab('Normal',false)">𝐍𝐞𝐰 𝐎𝐫𝐝𝐞𝐫</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " data-toggle="tab" href="#mass" onclick="toggleTab('Mass',false)">𝐌𝐚𝐬𝐬 𝐎𝐫𝐝𝐞𝐫</a>
+</li>
+<li class="nav-item lastLi" style="margin-left: auto;"><span readonly="" class="nav-link fixedOne" id="infoLi">Total Orders At {{ site["site_name"]}}: {{ site_order }} </span></li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="tab-content">
+<div id="new-order" class="tab-pane in active">
+<div class="alert alert-success" role="alert" id="order-alert" style="margin: 5px; display: none;">
+<button type="button" class="close" id="order-alert-close" aria-hidden="true">⨉</button>
+<style>.totals-block__card {display: flex;}.totals-block__card-left { width: 152px;flex-basis: 152px;padding-right: 12px;}.totals-block__card-right {width: 100%; }.totals-block__icon-preview {display: flex;justify-content: center;align-items: center;height: 100%;border-radius: 10px !important;}.card {margin-bottom:0;}</style><div class="col-lg-3 col-md-6 col-sm-12 mb-2 mt-2"><div class="h-400" style=""><div class="totals-block__card"></div><div class="totals-block__card-right"><div class="totals-blockcount"><h3 id="mc" class="totals-block__count-value tipus style-text-primary" style="">Your order received</h3></div></div></div></div><legend id="al-title">Your</legend>
+<h6 id="al-id-row"><strong>ID: </strong> <span id="al-id"></span></h6>
+<h6 id="al-service-row"><strong>🗃 𝐒𝐞𝐫𝐯𝐢𝐜𝐞: </strong> <span id="al-service"></span></h6>
+<h6 id="al-link-row"><strong>🔗 𝐋𝐢𝐧𝐤: </strong> <span id="al-link"></span></h6>
+<h6 id="al-qty-row"><strong>🔢 𝐐𝐮𝐚𝐧𝐭𝐢𝐭𝐲: </strong> <span id="al-qty"></span></h6>
+<h6 id="al-runs-row" style="display: none;"><strong>Runs: </strong> <span id="al-runs"></span></h6>
+<h6 id="al-price-row"><strong>💵 𝐘𝐨𝐮 𝐡𝐚𝐯𝐞 𝐩𝐚𝐢𝐝</strong> <span id="al-price"></span></h6>
+<h6 id="al-disc-row"><strong>Cashback Earned </strong> <span id="al-disc"></span></h6>
+<h6 id="al-bal-row"><strong>💸 𝐁𝐚𝐥𝐚𝐧𝐜𝐞: </strong> <span id="al-bal"></span></h6>
+</div>
+      	{% if error %}
+      <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">✕</button>
+{{ errorText }}
+      </div>
+    {% endif %}
+
+     {% if data["order"]["success"] == 1 %}
+      <div class="alert alert-dismissible alert-success">
+          <strong> {{ lang["neworder.success.id"] }}: </strong> {{ data['order']['id'] }} <br>
+          <strong> {{ lang["neworder.success.service"] }}: </strong> {{ data['order']['service'] }} <br>
+          <strong> {{ lang["neworder.success.link"] }}: </strong> {{ data['order']['link'] }} <br>
+          <strong> {{ lang["neworder.success.quantity"] }}: </strong> {{ data['order']['quantity'] }} <br>
+          <strong> {{ lang["neworder.success.charge"] }}: </strong> {{ data['order']['price'] }} <br>
+          <strong> {{ lang["neworder.success.balance"] }}: </strong>{{ data['order']['balance'] }} <br>
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">✕</span></button>
+
+      </div>
+    {% endif %}
+    
+    
+    {% if data["order"]["success"] == 2 %}
+      <div class="alert alert-dismissible alert-success">
+ <strong> {{ lang["neworder.success.id"] }}: </strong> {{ data['order']['id'] }} <br>
+ <strong> {{ lang["neworder.success.service"] }}: </strong> {{ data['order']['service'] }} <br>
+ <strong> {{ lang["neworder.success.username"] }}: </strong> {{ data['order']['link'] }} <br>
+ <strong> {{ lang["neworder.success.quantity"] }}: </strong> {{ data['order']['min'] }} - {{ data['order']['max'] }} <br>
+ <strong> {{ lang["neworder.success.posts"] }}: </strong> {{ data['order']['posts'] }} <br>
+ <strong> {{ lang["neworder.success.delay"] }}: </strong>{{ data['order']['delay'] }} <br>
+       </div>
+    {% endif %}
+ 
+ 
+<form method="post" action="">
+<div class="component_button_forms">
+ 
+<div class="form-group">
+<label for="orderformorderform-service" class="control-label">⚙️ 𝐂𝐞𝐭𝐞𝐠𝐨𝐫𝐲</label>
+<select class="form-control" id="neworder_category" name="categories" data-select="true" data-select-search="true" data-select-search-placeholder="Search" data-select-container="#select-category-container" tabindex="-1" aria-hidden="true">
+{{ category_html_simplify }}
+
+</select>
+<div id="select-category-container" class="position-relative"></div>
+</div>
+</div>
+
+
+<div class="form-group">
+<label for="orderform-service" class="control-label">🗃 𝐒𝐞𝐫𝐯𝐢𝐜𝐞</label>
+<select class="form-control" id="neworder_services" name="services" data-select="true" data-select-search="true" data-select-search-placeholder="Search" data-select-container="#select-service-container" tabindex="-1" aria-hidden="true">
+<option value="1">No services found in this category</option>
+</select>
+<div id="select-service-container" class="position-relative"></div>
+</div>
+<div id="neworder_fields"></div>
+
+
+<div class="form-group" id="charge_div">
+<label for="charge" class="control-label">💰 𝐏𝐫𝐢𝐜𝐞</label>
+<input type="text" class="form-control" id="charge" readonly>
+</div>
+<button type="submit" class="btn btn-block btn-primary">Place Order 🛍{{ lang[".button"] }}</button>
+</form>
+
+</div>
+<div id="mass" class="tab-pane fade">
+<form role="form" method="POST" action="/massorder" onsubmit="return prechecked()">
+<input type="hidden" name="_token" value="qVJYDFZTWnJJAmtRdx2FTjZmzGwOG1VW3u78Djjf">
+<input type="hidden" name="utok" id="utok" value="f7c79b338a9671ad0ee05de1ec08cb8f">
+<fieldset class="scheduler-border">
+<div class="form-group">
+<label for="links" class="control-label">One order per line in format</label>
+</div>
+<div class="form-group">
+<textarea name="content" id="content" data-validation="required" placeholder="package_id|quantity|𝐋𝐢𝐧𝐤 🔗" style="min-height: 350px; resize: vertical; height: 10px;" class="form-control"></textarea>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary">𝐏𝐥𝐚𝐜𝐞 𝐎𝐫𝐝𝐞𝐫 🛍</button>
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+<div class="component_content_card component_content_button component_content_headers mt-3">
+{% if contentText2 %}
+<div class="card">
+{{ contentText2 }}
+</div>
+{% endif %}</div>
+</div>
+</div>
+<style>
+                    .component_status_tabs.mb-3 .nav-link.active .fa {
+                      color: grey;
+                    }
+                    .new-order__content-text #contact .fa {
+                      color: #0074ff;
+                    }
+                </style>
+<div class="col-lg-5">
+<div class="component_content_card component_content_button component_content_headers">
+<div class="component_status_tabs mb-3">
+<div class="">
+<ul class="nav nav-pills tab">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#news"><i class="fa fa-fw fad fa-newspaper mr-2"></i> Latest News</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#contact"><i class="fa fa-fw fad fa-life-ring mr-2"></i> Contact Us</a>
+</li>
+</ul>
+</div>
+</div>
+{% if news %}
+
+<div class="card">
+<div class="new-order__content-text">
+<div class="tab-content">
+
+
+
+
+
+
+
+
+
+<div id="news" class="tab-pane in active" style="max-height: 600px;">       <div class="headsir"><i class="fal fa-newspaper mr-2"></i>Latest News</div>
+      <div class="ssw">
+      {% for new in news %}
+      <div class="news-item">
+        <div class="news-details">
+          <p class="news-date"><i class="fad fa-calendar-alt mr-1" style="--fa-secondary-opacity: 0.65;"></i>{{ new['news_date'] }}</p>
+          <h4 class="news-title">
+            <span class="icon-container">
+              <img width="30" class="news-icon-inline" src="{{ new['news_icon'] }}" alt="News Icon">
+            </span>
+            {{ new['news_title'] }}
+          </h4>
+          <div class="news-content">{{ new['news_content'] }}</div>
+        </div>
+      </div>
+      {% endfor %}
+      </div>
+  </div>
+  {% endif%}
+
+
+
+
+
+
+
+<div id="contact" class="tab-pane fade">
+<div class="each-note">
+<a href="/ticktes">
+<i class="fa fa-fw fa-comments"></i> {{ site["site_name"]}}
+</a>
+</div>
+<div class="each-note">
+<a href="mailto: cd @gmail.com">
+<i class="fa fa-fw fa-envelope"></i>  df@gmail.com
+</a>
+</div>
+<div class="each-note">
+<a href="skype:live:.cid.bd72d8f15f9f656?add">
+<i class="fab fa-fw fa-skype"></i> live:.cid.bd72d8f15f9f656
+</a>
+</div>
+<div class="each-note">
+<a href="https://api.whatsapp.com/send?phone={{ wp_number }}">
+<i class="fab fa-fw fa-whatsapp-square"></i> {{ wp_number }}
+</a>
+</div>
+<div class="each-note">
+<a href="https://instagram.com/dgfsd">
+<i class="fab fa-fw fa-instagram-square"></i> {{ site["site_name"]}}
+</a>
+</div>
+<div class="each-note">
+<a href="https://telegram.me/{{telegramusername}}">
+<i class="fab fa-fw fa-telegram-plane"></i> {{telegramusername}}
+</a>
+</div>
+<div class="social-links" style="text-align: right">
+<a href="https://youtube.com/channel/" target="_blank"><i class="fab fa-youtube"></i></a> <a href="https://www.facebook.com/?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a> <a href="https://instagram.com/dgfsd?igshid=" target="_blank"><i class="fab fa-instagram"></i></a> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper-content__footer">
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+function serviceclicked(sid,cid){
+ 
+ console.log(sid, cid)
+ $(`#neworder_category option[value=${cid}]`).prop('selected', 'selected').change();
+setTimeout(servd, 1000)
+function servd(){
+  console.log('run after 1 second');
+ $(`#neworder_services option[value=${sid}]`).prop('selected', 'selected').change();
+  var h23 = $(`#neworder_services option[value=${sid}]`).attr('data-content');
+  console.log(h23);
+ h23 = h23.replace('<span class="badge badge-secondary style-text-primary badge-rounded">','');
+ h23 = h23.replace('</span>','');
+ h23 = h23.replace('</b>','');
+ h23 = h23.replace('<b>','');
+  $('#dropdown_for_search').html('');
+ 
+  $('#search_services_field').val(h23);
+}
+
+
+ 
+ }
+$(document).ready(function () {
+    // Event listener for changes in the serviceSearch input
+ 
+    $('#search_services_field').on('input', function () {
+        // Get the input value
+        var inputValue = $(this).val();
+if(!inputValue){
+   $('#dropdown_for_search').html('');
+}else{
+        // Making an AJAX request
+        $.ajax({
+            type: 'POST',
+            url: '/ajax_data',  // Replace '/neworder' with the actual URL of your neworder route
+            data: { 
+                action: 'service_search' ,
+                search_term: inputValue
+            },
+            beforeSend: function(){
+               $('#dropdown_for_search').html(`<div class="dropdown-item"  bis_skin_checked="1" style="padding: 6px 12px; cursor: pointer;"><span class="badge service_id_badge bg-primary">Searching</span> Please Wait...</div>`);
+            },
+            success: function (response) {
+                // Handle the response from the server
+              
+                 $('#dropdown_for_search').html(response);
+              
+                // You can update the DOM or perform other actions based on the response
+            },
+            error: function (error) {
+                console.error('AJAX error:', error);
+            }
+        });
+    }});
+});
+</script>
+<style>
+  
+ .dropdown-item {
+    display: inline-table;
+    size: 12px;
+    max-height: 30px;
+    font-weight: 400;
+    text-align: justify;
+    white-space: normal;
+    background-color: rgba(225, 244, 250, 1);
+    color: var(--form_group_dropdown_items_text_color);
+}
+.dropup, .dropright, .dropdown, .dropleft {
+    position: relative;
+    OVERFLOW: overlay;
+    MAX-HEIGHT: 304PX;
+    BORDER-RADIUS: 9PX;
+}
+   </style>
+  
+{% include 'footer.twig' %}

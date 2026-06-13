@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    
+	    
+
+		<base href="{{ site['url'] }}/">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ title }}</title>
+		<meta name="keywords" content="{{ site['keywords'] }}">
+		<meta name="description" content="{{ site['description'] }}">
+	<link rel="shortcut icon" type="image/ico" href="{{ site['url'] }}/{{ site['favicon'] }}" />
+<link rel="icon" type="image/png" sizes="192x192" href="{{ site['url'] }}/{{ site['favicon'] }}" />
+<link rel="icon" type="image/png" sizes="512x512" href="{{ site['url'] }}/{{ site['favicon'] }}" />
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site['url'] }}/{{ site['favicon'] }}" />
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site['url'] }}/{{ site['favicon'] }}" />
+<link rel="apple-touch-icon" href="{{ site['url'] }}/{{ site['favicon'] }}" />
+{% include 'scriptkingfunction.twig' %}
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-s8FyyJmEF2kvSuZl+FAmrsyVzXv02wJfKImY8Mq1ZvqV82v4zJjVpqXgmO0BMfq1+vlYxWl4w8/6k2Ka7IhbMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+						  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+						  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+						  <![endif]-->
+
+
+
+<style>
+.body .balance-dropdown__name {
+
+    border-radius: 15px;
+}
+/* CSS */
+.button-32 {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 20%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}</style>
+<style>
+/* CSS */
+.button-33 {
+  background-color: #56adea7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}<style></style>
+<style>
+/* CSS */
+.button-32 {
+  background-color: #56adea7;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 20%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #56adea;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}</style>
+<style>
+/* CSS */
+.button-33 {
+  background-color: #56adea;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+.fa-cart-flatbed-suitcase:before {
+    content: "\f0c8"; /* Unicode for the fa-cart-flatbed-suitcase icon */
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}<style></style><style>
+{% if settings["site_theme_alt"] == "Red" %}
+	{% else %}
+	#service_description, #service_avg_time {
+    padding: 13px;
+    border-radius: 12px;
+    color: #334e6e;
+    box-shadow: none;
+    background-color:#e4e1ee;
+}
+	{% endif %}
+
+.dropup, .dropright, .dropdown, .dropleft {
+    position: relative;
+    OVERFLOW: scroll;
+    MAX-HEIGHT: 300PX;
+    BORDER-RADIUS: 12PX;
+}
+ .dropdown-item {
+    display: inline-table;
+    size: 12px;
+    max-height: 30px;
+    font-weight: 400;
+    text-align: justify;
+    white-space: normal;
+    color: var(--form_group_dropdown_items_text_color);
+    BORDER: SOLID 1PX ;
+}
+
+   
+.news-title{
+    background: #334e6e15;
+    padding:8px;
+    margin-top:8px;
+    border-radius:10px 10px 0px 0px;
+}
+.news-content{
+    background: #334e6e15;
+    margin-top:-8px;
+    padding:5px 10px 10px;
+    border-radius:0px 0px 10px 10px;
+}
+.news-date {
+    margin-top:8px;
+    font-size:12px;
+    background: #334e6e35;
+    padding:0px 8px 0px 8px;
+    border-radius:6px;
+    width:max-content;
+}
+.headsir{
+    font-weight:900;
+    font-size:20px;
+    margin-top:-5px;
+    margin-bottom:10px;
+}
+.ssw{max-height: 450px;overflow-y: auto;}.body .summary-card{border-radius: 22px;background: rgb(255 255 255 / 35%);border: 1.5px solid rgb(255 255 255 / 32%) !important;backdrop-filter: none;}</style>
+
+	<link rel="stylesheet" type="text/css" href="/public/Eternity/bootstrap.css">	
+	
+	<link rel="stylesheet" type="text/css" href="/public/Eternity/cyan.css">	
+
+
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+		
+<style>
+            :root{
+                --primary-color: #1fdcb6;
+                --primary-color90: #1fdcb6e6;
+                --primary-color80: #1fdcb6cc;
+                --primary-color40: #1fdcb666;
+                --primary-color30: #1fdcb64d;
+                --primary-color25: #1fdcb640;
+                --primary-color20: #1fdcb633;
+                --primary-color10: #1fdcb61a;
+                --secondary-color: #10afdb;
+                --reviews_bg_image: url("https://images.irscdn.icu/grace/assets/landing/bg-reviews-8.png");
+                --main_bg_image: url("https://images.irscdn.icu/grace/assets/landing/bg-main4.png");
+                --faq_bg_image: url("https://images.irscdn.icu/grace/assets/landing/bg-faq.png");
+                --body_bg_image: url("https://images.irscdn.icu/grace/assets/landing/bg-body.png");
+                --currency-symbol : '₹';
+            }
+        </style>
+		<style>
+		.body .component-sidebar__menu {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-color: #000000;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-style: none;
+    box-shadow: 0 8px 24px 0 rgba(5, 42, 54, 0.02);
+    background: linear-gradient(177deg, rgba(255, 255, 255, 0.2) 17%, rgba(255, 255, 255, 0.1) 73%);
+}
+		iframe {border:none;}
+			#block_342 .navbar-collapse {
+				padding-top: 0;
+			}
+			#block_342 .navbar-languages {
+				margin-left: 24px;
+				display: flex;
+				align-items: center;
+			}
+
+
+			.body .navbar-dropdown {
+				position: relative;
+				display: inline-block;
+				margin-top: 4px;
+				padding-bottom: 4px;
+				font-size: "";
+			}
+
+.balance-dropdown__name.balance-dropdown__toggle {
+        border-radius: 15px;
+}
+			.body .navbar-dropdown__name {
+				white-space: nowrap;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				color: #07264a;
+				background: #ffffff;
+				border-color: transparent;
+				box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);
+				border-style: solid;
+				border-left-width: 1px;
+				border-right-width: 1px;
+				border-top-width: 1px;
+				border-bottom-width: 1px;
+				padding: 6px 12px;
+				border-top-left-radius: 12px;
+				border-top-right-radius: 12px;
+				border-bottom-left-radius: 12px;
+				border-bottom-right-radius: 12px;
+				font-size: "";
+				font-weight: 600;
+				font-style: normal;
+			}
+
+			.body .navbar-dropdown__container {
+				position: absolute;
+				padding: 0;
+				margin: 5px 0 0;
+				top: 100%;
+				background: #ffffff;
+				min-width: 100%;
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+				border-bottom-left-radius: 4px;
+				border-bottom-right-radius: 4px;
+				border-color: transparent;
+				box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);
+				border-style: solid;
+				border-left-width: 0;
+				border-right-width: 0;
+				border-top-width: 0;
+				border-bottom-width: 0;
+			}
+
+			.body .navbar-dropdown__link {
+				display: block;
+				width: 100%;
+				text-decoration: none;
+				font-size: 1em;
+				color: #07264a;
+				padding: 6px 12px;
+			}
+
+			.body .navbar-dropdown__item {
+				list-style: none;
+			}
+
+			.body .navbar-dropdown__toggle:after {
+				display: inline-block;
+				content: '\f107';
+				font-family: 'Font Awesome 5 Pro';
+				margin-left: 12px;
+			}
+
+			.body-rtl {
+				direction: rtl;
+				text-align: inherit !important;
+			}
+.sidebar-block__left-menu {
+    border-radius: 15px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
+
+    .balance-dropdown__name {
+           border-radius: 15px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+ 
+    }
+			@media(max-width: 991px) {
+				#block_342 .navbar-languages {
+					margin-top: 20px;
+					margin-left: 0;
+				}
+				.body .navbar-dropdown {
+					width: 100%;
+					margin-top: 0;
+					padding-bottom: 0;
+				}
+				.body .navbar-dropdown__name {
+					width: 100%;
+				}
+				.body .navbar-dropdown__container {
+					position: relative;
+					visibility: visible;
+				}
+
+			}
+
+
+			{% if settings["site_theme_alt"] == "lilac" %}
+
+
+				#service_description,
+				#service_avg_time {
+					padding: 13px;
+					border-radius: 10px;
+					color: #393e46;
+					box-shadow: 1px 1px 1px #F8F0FF;
+					background-color: #F8F0FF;
+				}
+
+			{% elseif settings["site_theme_alt"] == "coral" %}
+
+				#service_description,
+				#service_avg_time {
+					padding: 13px;
+					border-radius: 10px;
+					color: #393e46;
+					box-shadow: 1px 1px 1px #FFF5E0;
+					background-color: #FFF5E0;
+				}
+			{% elseif settings["site_theme_alt"] == "azure" %}
+
+				#service_description,
+				#service_avg_time {
+					padding: 13px;
+					border-radius: 10px;
+					color: #393e46;
+					box-shadow: 1px 1px 1px #E1F4FA;
+					background-color: #E1F4FA;
+				}
+			{% elseif settings["site_theme_alt"] == "grey" %}
+
+				#service_description,
+				#service_avg_time {
+					padding: 13px;
+					border-radius: 10px;
+					color: #393e46;
+					box-shadow: 1px 1px 1px #F1F2F3;
+					background-color: #F1F2F3;
+				}
+			{% elseif settings["site_theme_alt"] == "lime" %}
+
+				#service_description,
+				#service_avg_time {
+					padding: 13px;
+					border-radius: 10px;
+					color: #3f3f44;
+					box-shadow: 1px 1px 1px #E6EEE2;
+					background-color: #E6EEE2;
+				}
+
+			{% elseif settings["site_theme_alt"] == "navy" %}
+				#service_description,
+				#service_avg_time {
+					padding: 13px;
+					border-radius: 10px;
+					color: #393e46;
+					box-shadow: 1px 1px 1px #E4E1EE;
+					background-color: #E4E1EE;
+				}
+
+			{% elseif settings["site_theme_alt"] == "pink" %}
+				#service_description,
+				#service_avg_time {
+					padding: 13px;
+					border-radius: 10px;
+					color: #393e46;
+					box-shadow: 1px 1px 1px #FDE7F3;
+					background-color: #FDE7F3;
+				}
+
+			{% elseif settings["site_theme_alt"] == "raspberry" %}
+				#service_description,
+				#service_avg_time {
+					padding: 13px;
+					border-radius: 10px;
+					color: #393e46;
+					box-shadow: 1px 1px 1px #E9E6FA;
+					background-color: #E9E6FA;
+				}
+
+
+			{% else %}
+				#service_description,
+				#service_avg_time {
+					padding: 13px;
+					border-radius: 10px;
+					color: #fff;
+					box-shadow: 1px 1px 1px #252427;
+					background-color: #252427;
+				}
+
+			{% endif %}
+		</style>
+
+	</head>
+
+
+	    
+	    {{ headerCode }}
+	{% if user['auth'] %}
+		<body class="body">
+
+
+
+
+			<div class="wrapper  wrapper-sidebar-navbar">
+
+				<div id="block_11" ="component_private_navbar">
+					<span class="component_private_navbar ">
+						<div class="component-navbar-private__wrapper component_private_sidebar">
+							<div class="sidebar-block__top component-navbar component-navbar__navbar-private editor__component-wrapper">
+								<div>
+									<nav class="navbar navbar-expand-lg navbar-light">
+										<div class="navbar-private__header">
+											<div class="sidebar-block__top-brand">
+												<div class="component-navbar-logo">
+													<a target="_self" style="color:#fff;">
+														<span style="text-transform: uppercase">
+															<span style="font-size: 24px">
+																<span style="letter-spacing: 1.0px">
+																	<span style="line-height: 48px">
+																		<strong style="font-weight: bold">
+																			{% if site["logo"] %}
+																				<img style="max-width:200px;" src="{{ site['logo'] }}" alt="" title="">
+																			{% else %}
+																				<span style="text-transform: ">
+																					<span style="font-size: 24px">
+																						<span style="letter-spacing: 1.0px">
+																							<span>
+																								<strong style="font-weight: bold">{{ site["site_name"] }}</strong>
+																							</span>
+																						</span>
+																					</span>
+																				</span>
+																			{% endif %}
+																		</strong>
+																	</span>
+																</span>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+											<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-11" aria-controls="navbar-collapse-11" aria-expanded="false" aria-label="Toggle navigation">
+												<span class="navbar-burger">
+													<span class="navbar-burger-line"></span>
+												</span>
+											</button>
+										</div>
+										<div class="navbar-collapse collapse" id="navbar-collapse-11" style="">
+											<div class="component-navbar-collapse-divider"></div>
+											<div class="d-flex component-navbar-collapse">
+												<ul class="navbar-nav navbar-nav-sidebar-menu">
+
+{% for menu in menus %}
+{% if menu["type"] == 2 %}
+<li class="nav-item component-navbar-nav-item component-navbar-private-nav-item">
+<a class="component-navbar-nav-link  component-navbar-nav-link__navbar-private {% if active_menu == menu["active"] %} component-navbar-nav-link-active__navbar-private  {% endif %} " href=" {{menu["slug"]}}">
+<span class="component-navbar-nav-link-icon">
+<span class="{{menu["icon"]}}"></span>
+</span>
+{{menu["name"]}}
+</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+
+
+{% if site_currency_converter == "1" %}
+<ul class="navbar-nav navbar-nav-currencies">
+
+												<div class="balance-dropdown-container component_balance_dropdown">
+													<div class="balance-dropdown ">
+														<div class="balance-dropdown__name balance-dropdown__toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false">{{ user["balance"] }}</div>
+														<ul class="balance-dropdown__container dropdown-menu" id="currencies-list">
+															{{ currencies_dropdown }}
+														</ul>
+													</div>
+												</div>
+											</ul>
+										{% else %}
+
+											<br>
+
+										{% endif %}
+
+<ul class="navbar-nav topBar">
+    <li class="nav-item component-navbar-nav-item component-navbar-private-nav-item">
+        <a class="component-navbar-nav-link component-navbar-nav-link__navbar-private" href="/account" target="_self">
+            <span class="component-navbar-nav-link-icon">
+<i class="fas fa-user-tie"></i>             </span>
+            𝐀𝐜𝐜𝐨𝐮𝐧𝐭
+        </a>
+    </li>
+    <li class="nav-item component-navbar-nav-item component-navbar-private-nav-item">
+        <a class="component-navbar-nav-link component-navbar-nav-link__navbar-private" href="/rules" target="_self">
+            <span class="component-navbar-nav-link-icon">
+  <i class="fas fa-clipboard"></i>            </span>
+           𝐑𝐮𝐥𝐞𝐬
+        </a>
+    </li>
+    <li class="nav-item component-navbar-nav-item component-navbar-private-nav-item">
+        <a class="component-navbar-nav-link component-navbar-nav-link__navbar-private" href="/logout">
+            <span class="component-navbar-nav-link-icon">
+                <i class="fas fa-sign-out-alt"></i>
+            </span>
+            <i class="fa-solid fa-turn-down"></i> 𝐋𝐨𝐠𝐨𝐮𝐭
+        </a>
+    </li>
+</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</span>
+			<span class="component_private_sidebar ">
+				<div class="component-sidebar_wrapper">
+					<div class="sidebar-block__left component-sidebar component-sidebar-with-navbar component_private_navbar editor__component-wrapper">
+						<div class="component-sidebar__menu">
+							<div class="component-sidebar__menu-logo">
+								<a target="_self" style="color:#fff;">
+									<span style="text-transform: uppercase">
+										<span style="font-size: 24px">
+											<span style="letter-spacing: 1.0px">
+												<span style="line-height: 48px">
+													<strong style="font-weight: bold">
+														{% if site["logo"] %}
+															<img style="max-width:200px;" src="{{ site['logo'] }}" alt="" title="">
+														{% else %}
+															<span style="text-transform: ">
+																<span style="font-size: 24px">
+																	<span style="letter-spacing: 1.0px">
+																		<span>
+																			<strong style="font-weight: bold">{{ site["site_name"] }}</strong>
+																		</span>
+																	</span>
+																</span>
+															</span>
+														{% endif %}
+													</strong>
+												</span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<ul class="sidebar-block__left-menu editor__component-wrapper">
+							    {% for menu in menus %}
+{% if menu["type"] == 2 %}
+
+							<li class="component-sidebar__menu-item ">
+									<a class="component-sidebar__menu-item-link" href="{{menu["slug"]}}">
+										<span class="sidebar-block__menu-item-icon">
+											<span class="{{menu["icon"]}}"></span>
+										</span>
+{{menu["name"]}}
+									</a>
+								</li>	
+							{% endif %}
+{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</span>
+		</body>
+	</div>
+
+
+{% else %}
+	<body class="body">
+	  
+	    {% include 'marquee.twig' %}
+
+
+	    
+	    
+	    
+		<div class="wrapper  wrapper-navbar">
+			<div id="block_342">
+				<div class="block-wrapper">
+					<div class="component_navbar ">
+						<div class="component-navbar__wrapper">
+							<div class="sidebar-block__top component-navbar component-navbar__navbar-public sommerce-editor__component-wrapper">
+								<div class="container">
+									<nav class="navbar navbar-expand-lg navbar-light">
+									    
+									    
+										<div class="sidebar-block__top-brand">
+											<div class="component-navbar-brand component-navbar-public-brand">
+												<a target="_self" style="color:#fff;">
+													<span style="text-transform: uppercase">
+														<span style="font-size: 24px">
+															<span style="letter-spacing: 1.0px">
+																<span style="line-height: 48px">
+																	<strong style="font-weight: bold">
+																		{% if site["logo"] %}
+																			<img style="max-width:200px;" src="{{ site['logo'] }}" alt="" title="">
+																		{% else %}
+																			<span style="text-transform: ">
+																				<span style="font-size: 24px">
+																					<span style="letter-spacing: 1.0px">
+																						<span>
+																							<strong style="font-weight: bold">{{ site["site_name"] }}</strong>
+																						</span>
+																					</span>
+																				</span>
+																			</span>
+																		{% endif %}
+																	</strong>
+																</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+										</div>
+										<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-342" aria-controls="navbar-collapse-342" aria-expanded="false" aria-label="Toggle navigation">
+											<span class="navbar-burger">
+												<span class="navbar-burger-line"></span>
+											</span>
+										</button>
+										<div class="collapse navbar-collapse" id="navbar-collapse-342">
+											<div class="d-flex component-navbar-collapse flex-wrap">
+
+<ul class="navbar-nav">
+    
+{% for menu in menus %}
+{% if menu["type"] == 2 %}
+<li class="nav-item component-navbar-nav-item component_navbar component-navbar-public-nav-item">
+<a class="component-navbar-nav-link  component-navbar-nav-link__navbar-private {% if active_menu == menu["active"] %} component-navbar-nav-link-active__navbar-private  {% endif %} " href=" {{menu["slug"]}}">
+<span class="component-navbar-nav-link-icon">
+<span class="{{menu["icon"]}}"></span>
+</span>
+{{menu["name"]}}
+</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+
+
+											</div>
+										</nav>
+									</div>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endif %}
